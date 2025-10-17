@@ -1,0 +1,7 @@
+United States
+
+Temperature: 19
+
+Humidity: 33%
+
+state: Sunny
