@@ -1,0 +1,7 @@
+Egypt
+
+Temperature: 28
+
+Humidity: 38%
+
+state: صافٍ

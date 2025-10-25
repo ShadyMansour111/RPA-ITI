@@ -1,0 +1,13 @@
+United States
+
+Temperature: 19
+
+Humidity: 33%
+
+Australia
+
+Temperature: 17
+
+Humidity: 80%
+
+state: Partly sunny

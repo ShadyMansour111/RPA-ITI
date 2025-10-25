@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Pt8Xp5Ur9k2XtUHJqYeERQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com/title/tt0460649" CVScreenId="854136f7-e156-4cc3-983b-5475eab26ee7" CvType="AnyWordGroup" DesignTimeRectangle="365, 630, 149, 40" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='A' type='' class='ipc-link ipc-link--baseAlt ipc-link--inherit-color' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="3fb3b3b9-cf39-43fe-ba1f-3336e13cabe0" ScopeSelectorArgument="&lt;html app='msedge.exe' title='How I Met Your Mother (TV Series 2005–2014) - IMDb' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="854136f7-e156-4cc3-983b-5475eab26ee7" CvTextArea="201, 635, 128, 28" CvTextArgument="TV Series" CvType="Text" DesignTimeRectangle="206, 630, 123, 40" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' isleaf='1' tag='LI' type='' class='ipc-inline-list__item' aaname='TV Series' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:isleaf='fuzzy' fuzzylevel:isleaf='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='TV Series' /&gt;" Guid="65cb9bca-29e3-4f42-88ce-6d82a8aabfd5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="476af718c57923653adbe26fdbc5a90d.png" xmlns="">0K2KqBOw37Ei1l6vd9MJylQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,4 @@
+Country:Madagascar
+Temperature:19
+Humidity: 77%
+Status: Clear with periodic clouds

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XFYm2wdIi0GhtsQDTHKfpQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="google.com" CVScreenId="e9544172-b644-4eba-89fc-fd3619749b98" CvElementArea="1169, 1351, 261, 79" CvTextArea="1205, 1377, 190, 32" CvTextArgument="Google Search" CvType="Button" DesignTimeRectangle="1174, 1163, 254, 72" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="2c3fdace-0649-4723-b331-52b850fd4d82" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Google' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4f3f55a690646315acbeb756ae50b037.png" xmlns="">0LiU42AO_SUa-e6PL6uIOAQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

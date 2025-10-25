@@ -1,0 +1,14 @@
+﻿{
+  "Name": "httpswww.google.com…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "v1usq80I6ka-gmdY6QnOxA",
+  "Reference": "qEJcA8usfEyziZTdLVVqvA/v1usq80I6ka-gmdY6QnOxA",
+  "ParentRef": "qEJcA8usfEyziZTdLVVqvA/ed7gq4S2vE2DIVK4ONkaNg",
+  "Created": "2025-10-25T16:04:28.1755683Z",
+  "Updated": "2025-10-25T16:04:28.1755683Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

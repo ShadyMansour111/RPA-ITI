@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INPUT suggestion-search",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "brhTAstLG0KOR-tUajZmqg",
+  "Reference": "qEJcA8usfEyziZTdLVVqvA/brhTAstLG0KOR-tUajZmqg",
+  "ParentRef": "qEJcA8usfEyziZTdLVVqvA/C9TLotnKu0atSID1ddLGSg",
+  "Created": "2025-10-19T08:28:15.6369845Z",
+  "Updated": "2025-10-19T08:28:15.6369845Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

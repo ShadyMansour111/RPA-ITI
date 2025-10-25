@@ -1,0 +1,7 @@
+Zimbabwe
+
+Temperature: 18
+
+Humidity: 64%
+
+state: Clear

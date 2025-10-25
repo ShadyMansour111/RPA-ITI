@@ -1,7 +1,0 @@
-ghana
-
-Temperature: 26
-
-Humidity: 87%
-
-state: Clear

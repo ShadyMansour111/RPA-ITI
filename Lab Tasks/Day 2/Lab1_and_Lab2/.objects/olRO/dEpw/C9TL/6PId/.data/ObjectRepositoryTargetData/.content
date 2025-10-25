@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="z8sELv8GIEqeVDxfGWFwHw" Reference="qEJcA8usfEyziZTdLVVqvA/6PIdRYzIUkSAJl_u9FYwNw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com/title/tt0460649" CVScreenId="dde2d93a-459a-4cc4-ae6c-5de8ce6aab1d" DesignTimeRectangle="2005, 571, 63, 48" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='SPAN' type='' class='sc-4dc495c1-1 lbQcRY' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="d9cc0780-ef04-44e1-ba4d-fb73969c9a6c" ScopeSelectorArgument="&lt;html app='msedge.exe' title='How I Met Your Mother (TV Series 2005–2014) - IMDb' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="13f0532e8d0e3f22b7809ab2fbffcce3.png" xmlns="">0sehlVcir5UW48uBIbFysCA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

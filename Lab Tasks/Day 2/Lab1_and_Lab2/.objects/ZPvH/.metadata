@@ -1,0 +1,15 @@
+﻿{
+  "Name": "New Text Document.txt - Notepad",
+  "Type": "App",
+  "Id": "ZPvHZVx-NUyIH5-nkawkcQ",
+  "Reference": "qEJcA8usfEyziZTdLVVqvA/ZPvHZVx-NUyIH5-nkawkcQ",
+  "Created": "2025-10-17T17:51:17.6350497Z",
+  "Updated": "2025-10-17T21:06:56.988654Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

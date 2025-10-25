@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Egypttemperature - Google Search",
+  "Type": "Screen",
+  "Id": "ExyT-VoOfkquw4BkJvJYFg",
+  "Reference": "qEJcA8usfEyziZTdLVVqvA/ExyT-VoOfkquw4BkJvJYFg",
+  "ParentRef": "qEJcA8usfEyziZTdLVVqvA/deTbtg-kCUqP3k39cP80MQ",
+  "Created": "2025-10-25T16:02:13.8008487Z",
+  "Updated": "2025-10-25T16:02:13.8008487Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
