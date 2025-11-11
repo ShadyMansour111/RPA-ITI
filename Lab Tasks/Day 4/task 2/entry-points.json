@@ -1,0 +1,18 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "entryPoints": [
+    {
+      "filePath": "GetMoviesData.xaml",
+      "uniqueId": "a3e5db9a-617c-4080-9192-5817356200ff",
+      "type": "process",
+      "output": {
+        "type": "object",
+        "properties": {
+          "strAllMoviesData": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]
+}

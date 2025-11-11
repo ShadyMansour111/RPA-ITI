@@ -1,20 +1,20 @@
 {
-  "name": "RPA Challenge_Fill Form",
-  "projectId": "0908a1e0-e00d-4cda-8cfc-aef1731ae0fb",
+  "name": "ACMEData",
+  "projectId": "6af38233-e3ff-4c7f-9ced-5d44798bd028",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "GetACMEData.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[3.2.1]",
-    "UiPath.GSuite.Activities": "[3.4.10]",
-    "UiPath.System.Activities": "[25.8.1]",
-    "UiPath.UIAutomation.Activities": "[25.10.13]",
-    "UiPath.WebAPI.Activities": "[2.3.2]"
+    "UiPath.Mail.Activities": "[2.4.10]",
+    "UiPath.System.Activities": "[25.10.0]",
+    "UiPath.Testing.Activities": "[25.10.0]",
+    "UiPath.UIAutomation.Activities": "[25.10.16]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "25.0.172.0",
-  "projectVersion": "1.0.1",
+  "studioVersion": "25.10.0.0",
+  "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -48,8 +48,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "5aec23cc-e9a7-494d-a817-831488e8781d",
+      "filePath": "GetACMEData.xaml",
+      "uniqueId": "5e0aedf2-1638-4a63-bf59-7256db4f7907",
       "input": [],
       "output": []
     }

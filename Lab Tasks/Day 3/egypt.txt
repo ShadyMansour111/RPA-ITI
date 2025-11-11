@@ -1,0 +1,3 @@
+Temprature:9
+Humidity: 35%
+Status: Sunny

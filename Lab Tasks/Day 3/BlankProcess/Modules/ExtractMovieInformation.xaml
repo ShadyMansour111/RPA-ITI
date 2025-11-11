@@ -1,0 +1,254 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ExtractMovieInformation" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="out_strDiscription" Type="OutArgument(x:String)" />
+    <x:Property Name="out_strStars" Type="OutArgument(x:String)" />
+    <x:Property Name="inOut_dicMovieInfo" Type="InOutArgument(scg:Dictionary(x:String, x:String))" />
+    <x:Property Name="in_strMoviePageLink" Type="InArgument(ui:UiElement)" />
+    <x:Property Name="out_strMovieName" Type="OutArgument(x:String)" />
+    <x:Property Name="out_strMovieLink" Type="OutArgument(x:String)" />
+    <x:Property Name="out_strRating" Type="OutArgument(x:String)" />
+    <x:Property Name="out_strPopularity" Type="OutArgument(x:String)" />
+    <x:Property Name="out_strDetails" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>ExtractMovieInformation_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ExtractMovieInformation" sap:VirtualizedContainerService.HintSize="845.2,1777.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="545.6,1754.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_strMoviePageLink]" IsDisplayNameAuto="True" ScopeGuid="3742db71-c78b-4629-8b76-9e60b5682a12" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1594.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="strStars" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'Movie link'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478.4,142.4" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="3742db71-c78b-4629-8b76-9e60b5682a12" TextString="[out_strMovieLink]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable CVScreenId="aa8a1c05-8a6a-410f-9f34-bfa4cac144e7" ContentHash="SG2DeboVgkmv1df2GxRHcg" DesignTimeRectangle="205, 72, 1429, 31" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='*' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" Guid="e6fe8ba4-08a8-48eb-ba5a-d0f0627304df" InformativeScreenshot="b5569f5569b9e1b6e6c7c32f8b01a3e8.png" Reference="jeE9iW77JEmyGcXscXbU4g/6D8_OaddWkW4IoTqyZ3pNA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Movie name'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478.4,142.4" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="3742db71-c78b-4629-8b76-9e60b5682a12" TextString="[out_strMovieName]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="imdb.com/title/tt0068646" CVScreenId="c45de9f3-51e5-46c8-b7a7-e9054cc7e400" ContentHash="aF3LRjTjZEGlcmVtafQCWg" DesignTimeRectangle="190, 243, 531, 72" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='hero__primary-text' parentid='__next' tag='SPAN' /&gt;" Guid="b5e7916a-5a1a-4189-8f31-06c14c3b18dc" InformativeScreenshot="d16df1886c27ebefca26a1574e08f6d7.png" Reference="jeE9iW77JEmyGcXscXbU4g/BcyYGVi90kCQP68oMImxtg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Rating'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478.4,142.4" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="3742db71-c78b-4629-8b76-9e60b5682a12" TextString="[out_strRating]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="imdb.com/title/tt10048342" CVScreenId="28435843-11bc-4b6e-b109-5bff3e513d48" ContentHash="ltW6qdJN8k2axAOVDatb7w" DesignTimeRectangle="1314, 277, 39, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='/10' parentid='__next' tag='SPAN' /&gt;&lt;nav up='1' /&gt;&lt;webctrl aaname='*' parentid='__next' tag='SPAN' idx='1' /&gt;" Guid="be480e0e-0087-46b9-acab-4195a4edc46e" InformativeScreenshot="67baa2ea802c23e7b8f07a3631f76012.png" Reference="jeE9iW77JEmyGcXscXbU4g/OJ0txErDkUepCHNsqEhxhA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Popularity'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478.4,142.4" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="3742db71-c78b-4629-8b76-9e60b5682a12" TextString="[out_strPopularity]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="imdb.com/title/tt10048342" CVScreenId="03844a2c-d616-4705-87d2-2cf206caf3f4" ContentHash="0ypdmmXyH0O2WYORk7VC3w" DesignTimeRectangle="1619, 350, 47, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='308' parentid='__next' tag='DIV' /&gt;" Guid="50fbfd06-914f-4854-9b22-51fd41524a86" InformativeScreenshot="a931f0326138be8ed80a8c98c13461fb.png" Reference="jeE9iW77JEmyGcXscXbU4g/AsR4foDejki9x14oMSQ-qw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Queen&amp;apos;s Gambit (TV Mini Series 2020) - IMDb' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'series type'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478.4,142.4" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="3742db71-c78b-4629-8b76-9e60b5682a12" TextString="[out_strDetails]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="imdb.com/title/tt10048342" CVScreenId="03844a2c-d616-4705-87d2-2cf206caf3f4" ContentHash="t3KMO-pqZU6k5lqlkVSs3g" DesignTimeRectangle="190, 378, 116, 25" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='presentation' isleaf='1' tag='LI' /&gt;" Guid="cfdc1e88-f3f9-461b-922f-b137430883a9" InformativeScreenshot="4c3b35429fc7d7e795a285ca4311bed7.png" Reference="jeE9iW77JEmyGcXscXbU4g/-IefJQoqikitQR2cA7xwdA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Queen&amp;apos;s Gambit (TV Mini Series 2020) - IMDb' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Scott FrankAllan Scott'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478.4,142.4" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="3742db71-c78b-4629-8b76-9e60b5682a12" TextString="[out_strStars]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="imdb.com/title/tt10048342" CVScreenId="99f70b03-73db-4880-987e-6e1c48afbe38" ContentHash="ZTRiYgxgv0mBpHSxcWh6Vw" DesignTimeRectangle="253, 604, 921, 31" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='ipc-metadata-list-item__content-container' idx='2' parentid='__next' tag='DIV' /&gt;" Guid="3145695e-f8a5-4c33-9314-29ebd8ecde65" InformativeScreenshot="3b201263f2bf0d2b35a14db8d0b0a6ea.png" Reference="VKIAenXbiEObmGqsFHaLoQ/BJXmvLnqEkidX5Fm6nHUIA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Queen&amp;apos;s Gambit (TV Mini Series 2020) - IMDb' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Coming-of-AgeEpicPeriod…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478.4,142.4" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="3742db71-c78b-4629-8b76-9e60b5682a12" TextString="[out_strDiscription]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="imdb.com/title/tt10048342" ContentHash="rX6JUhRIsEOaQRsLSKm4ZA" DesignTimeRectangle="190, 888, 697, 47" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='ipc-chip-list__scroller' parentid='__next' tag='DIV' /&gt;" Guid="157d06a7-3053-471c-bd04-16d016217e47" InformativeScreenshot="7c8951b99e8843ba4650306c8d90b943.png" Reference="VKIAenXbiEObmGqsFHaLoQ/pOjnxtocLEaoujGchvIlNw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Queen&amp;apos;s Gambit (TV Mini Series 2020) - IMDb' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.4,367.2" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[inOut_dicMovieInfo]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[New Dictionary(Of String, String)]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[inOut_dicMovieInfo("Link")]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[out_strMovieLink]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[inOut_dicMovieInfo("Name")]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[out_strMovieName]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[inOut_dicMovieInfo("Rating")]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[out_strRating]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[inOut_dicMovieInfo("Popularity")]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[out_strPopularity]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[inOut_dicMovieInfo("Type")]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[out_strDetails]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[inOut_dicMovieInfo("Stars")]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[out_strStars]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[inOut_dicMovieInfo("Discription")]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[out_strDiscription]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+            </ui:MultipleAssign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478.4,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[inOut_dicMovieInfo(&quot;Stars&quot;)]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

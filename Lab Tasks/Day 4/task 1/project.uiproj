@@ -1,6 +1,6 @@
 {
-  "Name": "RPA Challenge_Fill Form",
+  "Name": "ACMEData",
   "ProjectType": "Process",
   "Description": "Blank Process",
-  "MainFile": "Main.xaml"
+  "MainFile": "GetACMEData.xaml"
 }

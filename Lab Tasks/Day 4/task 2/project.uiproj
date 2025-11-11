@@ -1,6 +1,6 @@
 {
-  "Name": "RPA Challenge_Fill Form",
+  "Name": "IMDBTop250",
   "ProjectType": "Process",
   "Description": "Blank Process",
-  "MainFile": "Main.xaml"
+  "MainFile": "GetMoviesData.xaml"
 }

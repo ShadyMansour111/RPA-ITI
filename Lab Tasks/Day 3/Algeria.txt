@@ -1,0 +1,3 @@
+Temprature: 24
+Humidity: 58%
+Status: Cloudy

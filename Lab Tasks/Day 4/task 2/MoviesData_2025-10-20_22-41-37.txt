@@ -1,0 +1,9 @@
+Movie name: The Godfather
+Year: (1972)
+Rate: 97%
+Movie name: Casablanca
+Year: (1942)
+Rate: 99%
+Movie name: L.A. Confidential
+Year: (1997)
+Rate: 99%

@@ -1,20 +1,20 @@
 {
-  "name": "RPA Challenge_Fill Form",
-  "projectId": "0908a1e0-e00d-4cda-8cfc-aef1731ae0fb",
+  "name": "IMDBTop250",
+  "projectId": "5c9c873c-e064-46a5-8b7d-74f650d2c8b9",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "GetMoviesData.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[3.2.1]",
-    "UiPath.GSuite.Activities": "[3.4.10]",
-    "UiPath.System.Activities": "[25.8.1]",
-    "UiPath.UIAutomation.Activities": "[25.10.13]",
-    "UiPath.WebAPI.Activities": "[2.3.2]"
+    "UiPath.Mail.Activities": "[2.4.10]",
+    "UiPath.System.Activities": "[25.10.0]",
+    "UiPath.Testing.Activities": "[25.10.0]",
+    "UiPath.UIAutomation.Activities": "[24.10.6]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "25.0.172.0",
-  "projectVersion": "1.0.1",
+  "studioVersion": "25.10.0.0",
+  "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -48,8 +48,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "5aec23cc-e9a7-494d-a817-831488e8781d",
+      "filePath": "GetMoviesData.xaml",
+      "uniqueId": "a3e5db9a-617c-4080-9192-5817356200ff",
       "input": [],
       "output": []
     }

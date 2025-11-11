@@ -1,6 +1,0 @@
-{
-  "Name": "RoboticEnterpriseFramework_Dispatcher",
-  "ProjectType": "Process",
-  "Description": "Dispather using RE Framework\r\n",
-  "MainFile": "Main.xaml"
-}

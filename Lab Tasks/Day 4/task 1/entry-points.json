@@ -1,0 +1,18 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "entryPoints": [
+    {
+      "filePath": "GetACMEData.xaml",
+      "uniqueId": "5e0aedf2-1638-4a63-bf59-7256db4f7907",
+      "type": "process",
+      "output": {
+        "type": "object",
+        "properties": {
+          "out_ExtractedData": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]
+}

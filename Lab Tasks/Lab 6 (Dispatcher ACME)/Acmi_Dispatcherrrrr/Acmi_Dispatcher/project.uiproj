@@ -1,6 +1,0 @@
-{
-  "Name": "ACME_Dispatcher",
-  "ProjectType": "Process",
-  "Description": "Dispatcher for ACME work items using  RE Framework as a starting tempelate",
-  "MainFile": "Main.xaml"
-}

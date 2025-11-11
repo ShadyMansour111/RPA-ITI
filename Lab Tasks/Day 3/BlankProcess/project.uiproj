@@ -1,5 +1,5 @@
 {
-  "Name": "RPA Challenge_Fill Form",
+  "Name": "BlankProcess",
   "ProjectType": "Process",
   "Description": "Blank Process",
   "MainFile": "Main.xaml"
